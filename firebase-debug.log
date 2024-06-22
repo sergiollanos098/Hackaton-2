@@ -1,0 +1,51 @@
+[debug] [2024-06-22T22:00:40.212Z] ----------------------------------------------------------------------
+[debug] [2024-06-22T22:00:40.214Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vladi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-22T22:00:40.215Z] CLI Version:   13.11.3
+[debug] [2024-06-22T22:00:40.215Z] Platform:      win32
+[debug] [2024-06-22T22:00:40.215Z] Node Version:  v20.13.1
+[debug] [2024-06-22T22:00:40.215Z] Time:          Sat Jun 22 2024 17:00:40 GMT-0500 (hora estándar de Perú)
+[debug] [2024-06-22T22:00:40.215Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-22T22:00:40.218Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-22T22:00:40.319Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-22T22:00:40.319Z] > authorizing via signed-in user (sergiollanos.sl@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vladi\OneDrive\Desktop\Hackaton2Deploy\hackaton2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-06-22T22:00:40.906Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-22T22:00:40.906Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-22T22:00:46.264Z] Using project from CLI flag: hackaton2-f44fe
+[debug] [2024-06-22T22:00:46.265Z] > refreshing access token with scopes: []
+[debug] [2024-06-22T22:00:46.266Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-22T22:00:46.266Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-22T22:00:46.533Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-22T22:00:46.534Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-22T22:00:46.558Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hackaton2-f44fe [none]
+[debug] [2024-06-22T22:00:47.099Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hackaton2-f44fe 403
+[debug] [2024-06-22T22:00:47.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hackaton2-f44fe {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-22T22:00:47.099Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-06-22T22:00:47.313Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\vladi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\vladi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project hackaton2-f44fe. Please make sure the project exists and your account has permission to access it.
